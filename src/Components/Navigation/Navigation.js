@@ -33,13 +33,37 @@ class Navigation extends React.Component {
     }
   }
 
-  navSlide() {}
+  navSlide() {
+    const burger = document.querySelector(".burger");
+    const nav = document.querySelector(".nav-links");
+    const navLinks = document.querySelectorAll(".nav-links li");
+    const contact = document.querySelector(".contact");
+
+    burger.addEventListener("click", () => {
+      // Toggle Nav
+      nav.classList.toggle("nav-active");
+      // Animate Links
+      navLinks.forEach((link, index) => {
+        if (link.style.animation) {
+          link.style.animation = "";
+        } else {
+          link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 +
+            0.3}s`;
+        }
+      });
+      // Burger Animation
+      burger.classList.toggle("toggle");
+      contact.classList.toggle("contact-toggle");
+    });
+  }
 
   componentDidMount() {
     this.activeNavLink();
+    this.navSlide();
   }
   componentDidUpdate() {
     this.activeNavLink();
+    this.navSlide();
   }
 
   render() {
@@ -49,6 +73,7 @@ class Navigation extends React.Component {
           <div className="logo">
             <h4>RoboC0de</h4>
           </div>
+
           <ul className="nav-links">
             <Link style={this.linkStyle} to="/">
               <li className="Link-links ">Home</li>
@@ -59,12 +84,17 @@ class Navigation extends React.Component {
             <Link style={this.linkStyle} to="/About">
               <li className="Link-links">About Me</li>
             </Link>
-            <li id="contact">Contact</li>
           </ul>
-          <div className="burger">
-            <div className="line1" />
-            <div className="line2" />
-            <div className="line3" />
+          <div className="contact-burger">
+            <div className="contact">
+              <p id="contact">Contact</p>
+            </div>
+
+            <div className="burger">
+              <div className="line1" />
+              <div className="line2" />
+              <div className="line3" />
+            </div>
           </div>
         </nav>
       </div>
