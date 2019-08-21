@@ -1,0 +1,30 @@
+@font-face {
+  font-family: PopLight;
+  src: url("../../fonts/Poppins-Light.ttf");
+}
+@font-face {
+  font-family: PopMed;
+  src: url("../../fonts/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: PopReg;
+  src: url("../../fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: RobLight;
+  src: url("../../fonts/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: RobMed;
+  src: url("../../fonts/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: RobReg;
+  src: url("../../fonts/Roboto-Regular.ttf");
+}
+body {
+  font-family: PopLight;
+  background: radial-gradient(rgb(146, 112, 1), rgb(73, 17, 17));
+  height: 100vh;
+}
