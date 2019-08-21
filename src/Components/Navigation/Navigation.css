@@ -14,6 +14,7 @@
   letter-spacing: 5px;
   font-size: 20px;
   text-align: center;
+  z-index: 4;
 }
 
 .nav-links {
@@ -23,6 +24,7 @@
   grid-column: 4/5;
   justify-self: center;
   grid-row: 1/2;
+
   /* display: none; */
 }
 
@@ -49,7 +51,7 @@
   align-items: center;
   align-content: center;
   justify-self: center;
-  z-index: 2;
+  z-index: 3;
 }
 .active-nav {
   text-decoration: underline;
@@ -70,6 +72,41 @@
   margin: 5px;
   border-radius: 10px;
   transition: all 0.3s ease;
+}
+
+.contact-open {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 40vh;
+  z-index: 2;
+  color: black;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 5% 1fr 1fr 5%;
+  justify-items: center;
+  align-items: center;
+  transform: translateY(-100%);
+}
+
+.contact-open h2 {
+  font-family: PopReg;
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+
+.contact-open h3 {
+  font-size: 18px;
+}
+
+.mail {
+  grid-column: 2/3;
+  text-align: center;
+}
+
+.phone {
+  text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
@@ -110,7 +147,8 @@
 }
 
 .contact-toggle {
-  display: none;
+  opacity: 0;
+  pointer-events: none;
 }
 
 @keyframes navLinkFade {

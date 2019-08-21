@@ -57,13 +57,55 @@ class Navigation extends React.Component {
     });
   }
 
+  contactSlide() {
+    const contact = document.querySelector(".contact");
+    const burger = document.querySelector(".burger");
+    const logo = document.querySelector(".logo");
+    const contactOpen = document.querySelector(".contact-open");
+    const mail = document.querySelector(".mail");
+    const phone = document.querySelector(".phone");
+
+    const tl = new TimelineMax({ paused: true, reversed: true });
+
+    tl.to(contactOpen, 0.5, { y: "0%" })
+      .fromTo(
+        mail,
+        0.5,
+        { opacity: 0, y: "10%" },
+        { opacity: 1, y: "0%" },
+        "-=0.1"
+      )
+      .fromTo(
+        phone,
+        0.5,
+        { opacity: 0, y: "10%" },
+        { opacity: 1, y: "0%" },
+        "-=0.5"
+      )
+      .fromTo(logo, 0.2, { color: "white" }, { color: "black" }, "-=1")
+      .fromTo(
+        burger,
+        0.2,
+        { opacity: 1, pointerEvents: "all" },
+        { opacity: 0, pointerEvents: "none" },
+        "-=1.4"
+      )
+      .fromTo(contact, 0.2, { color: "white" }, { color: "black" }, "-=1.1");
+
+    contact.addEventListener("click", () => {
+      tl.reversed() ? tl.play() : tl.reverse();
+    });
+  }
+
   componentDidMount() {
     this.activeNavLink();
     this.navSlide();
+    this.contactSlide();
   }
   componentDidUpdate() {
     this.activeNavLink();
     this.navSlide();
+    this.contactSlide();
   }
 
   render() {
@@ -94,6 +136,16 @@ class Navigation extends React.Component {
               <div className="line1" />
               <div className="line2" />
               <div className="line3" />
+            </div>
+          </div>
+          <div className="contact-open">
+            <div className="mail">
+              <h2>Mail</h2>
+              <h3>sawizahmadi@gmail.com</h3>
+            </div>
+            <div className="phone">
+              <h2>Phone</h2>
+              <h3>+31 6 225 29 201</h3>
             </div>
           </div>
         </nav>
