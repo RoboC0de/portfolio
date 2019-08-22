@@ -25,6 +25,6 @@
 }
 body {
   font-family: PopLight;
-  background: radial-gradient(rgb(146, 112, 1), rgb(73, 17, 17));
+  /* overflow: hidden; */
   height: 100vh;
 }

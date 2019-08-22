@@ -1,0 +1,41 @@
+.slider {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(rgba(43, 55, 96, 1), rgba(11, 16, 35, 1));
+  z-index: -1;
+}
+
+section {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  height: 70%;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+.hero::after {
+  content: "";
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.336),
+    rgba(0, 0, 0, 0.116)
+  );
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

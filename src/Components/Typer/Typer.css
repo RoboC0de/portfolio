@@ -1,0 +1,46 @@
+#cursor {
+  border-right: 0.08em solid #ffffff;
+  animation: blink 0.9s steps(1) infinite;
+}
+.headline {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  font-size: 90px;
+  transform: translate(-20%, -70%);
+  color: white;
+  z-index: 1;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .headline {
+    font-size: 65px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .headline {
+    font-size: 50px;
+    top: 60%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .headline {
+    font-size: 35px;
+    top: 60%;
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .headline {
+    font-size: 28px;
+    top: 65%;
+    left: 2%;
+  }
+}
