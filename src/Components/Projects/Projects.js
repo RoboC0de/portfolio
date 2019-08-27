@@ -129,6 +129,10 @@ class Projects extends React.Component {
     };
   }
 
+  onComponentLoad() {
+    const tl = new TimelineMax();
+  }
+
   componentDidMount() {
     this.init();
   }

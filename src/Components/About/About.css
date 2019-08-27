@@ -4,15 +4,64 @@
   left: 0%;
   height: 100vh;
   width: 100%;
-  background: radial-gradient(#3d5a3d, #161616);
+  background: radial-gradient(#5a3d3d, #161616);
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 5% 1fr 3fr 5%;
 }
 
-.portfolio h1 {
+.imgSection {
+  grid-column: 2/3;
+  height: 400px;
+  width: 100%;
+  align-self: center;
   text-align: center;
-  justify-self: center;
-  margin: 0 auto;
-  grid-row: 2/3;
   color: white;
+}
+
+.aboutImg {
+  text-align: center;
+}
+
+.aboutImg img {
+  height: 200px;
+  border-radius: 100%;
+  margin: 20px auto;
+  display: inline-block;
+}
+
+.info-section {
+  grid-column: 3/4;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  margin: 7% 12%;
+}
+
+.imgSection p {
+  font-family: RobLight;
+}
+
+.occupation {
+  margin: 20px 5%;
+  font-family: RobLight;
+}
+
+.occupation h1 {
+  font-family: PopReg;
+  font-size: 20px;
+}
+
+.occupation h2 {
+  font-family: PopLight;
+  font-size: 18px;
+  margin: 5px 0px;
+}
+
+.occupation h3 {
+  font-family: PopLight;
+  font-size: 16px;
+}
+
+.occupation p {
+  margin: 3px 0px 3px 20px;
+  font-size: 15px;
 }
