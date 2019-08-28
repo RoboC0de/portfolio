@@ -30,13 +30,41 @@
 }
 
 .info-section {
+  position: absolute;
+  top: 10%;
+  overflow-y: scroll;
   grid-column: 3/4;
+  display: grid;
+  grid-template-columns: 5% 1fr 2fr 5%;
   background-color: rgba(255, 255, 255, 0.5);
   color: black;
-  margin: 7% 12%;
+  height: 80vh;
+  border-radius: 8px;
+}
+
+.skill-section {
+  grid-column: 2/3;
 }
 
 .imgSection p {
+  font-family: RobLight;
+}
+
+.list-section {
+  margin: 20px 5%;
+}
+
+.list-section h1 {
+  margin-bottom: 5px;
+  font-family: PopReg;
+  font-size: 20px;
+}
+
+.list-section ul,
+ol {
+  margin: 3px 0px 3px 30px;
+  list-style: circle;
+  font-size: 15px;
   font-family: RobLight;
 }
 
@@ -64,4 +92,79 @@
 .occupation p {
   margin: 3px 0px 3px 20px;
   font-size: 15px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #a6a6a6;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 1024px) {
+  .imgSection p {
+    display: none;
+  }
+  .imgSection {
+    position: relative;
+  }
+  .imgSection img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .imgSection {
+    display: none;
+  }
+
+  .portfolio {
+    grid-template-columns: 5% 1fr 5%;
+  }
+
+  .info-section {
+    grid-column: 2/3;
+  }
+  .info-section h1 {
+    font-size: 18px;
+  }
+  .info-section h2 {
+    font-size: 16px;
+  }
+  .info-section h3 {
+    font-size: 14px;
+  }
+  .info-section p,
+  li {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .info-section h1 {
+    font-size: 16px;
+  }
+  .info-section h2 {
+    font-size: 14px;
+  }
+  .info-section h3 {
+    font-size: 12px;
+  }
+  .info-section p,
+  li {
+    font-size: 12px;
+  }
 }

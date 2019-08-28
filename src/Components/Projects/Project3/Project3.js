@@ -20,7 +20,18 @@ class Project3 extends React.Component {
           />
         </div>
         <div className="details">
-          <h1>Playlistify</h1>
+          <div className="title-git">
+            <h1>Playlistify</h1>
+
+            <a href="https://github.com/RoboC0de/playlistify1" target="_blank">
+              <img
+                className="github"
+                src={require("../../../Images/github.png")}
+                id="github Roboc0de"
+              />
+            </a>
+          </div>
+
           <h2>Project on Spotify API</h2>
           <p>
             It allows you to create a playlist and add it to you Spotify

@@ -98,6 +98,7 @@ class Projects extends React.Component {
       });
       activeDot.classList.add("active");
     }
+
     function scrollChange(e) {
       if (e.deltaY > 0) {
         scrollSlide += 1;

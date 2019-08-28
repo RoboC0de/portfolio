@@ -6,9 +6,6 @@ import Occupation3 from "./Occupations/Occupation3";
 import Occupation4 from "./Occupations/Occupation4";
 import Occupation5 from "./Occupations/Occupation5";
 
-import hoverEffect from "hover-effect";
-import { TimelineMax } from "gsap/all";
-
 class About extends React.Component {
   constructor(props) {
     super(props);
@@ -30,11 +27,35 @@ class About extends React.Component {
           </p>
         </div>
         <div className="info-section">
-          <Occupation5 />
-          <Occupation4 />
-          <Occupation3 />
-          <Occupation2 />
-          <Occupation1 />
+          <div className="skill-section">
+            <div className="skills list-section">
+              <h1>Skills</h1>
+              <ul>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Html/ CSS</li>
+                <li>Sass/ less</li>
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+              </ul>
+            </div>
+            <div className="languages list-section">
+              <h1>Languages</h1>
+              <ol>
+                <li>Dutch (Native)</li>
+                <li>English (Fluent)</li>
+                <li>Dari (Fluent)</li>
+                <li>Arabic (Fluent)</li>
+              </ol>
+            </div>
+          </div>
+          <div className="occupations">
+            <Occupation5 />
+            <Occupation4 />
+            <Occupation3 />
+            <Occupation2 />
+            <Occupation1 />
+          </div>
         </div>
       </div>
     );

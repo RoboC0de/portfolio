@@ -13,8 +13,8 @@ class App extends React.Component {
         <div>
           <Navigation />
           <Route path="/" exact component={Landing} />
-          <Route path="/Projects" component={Projects} />
-          <Route path="/About" component={About} />
+          <Route path="/Projects" exact component={Projects} />
+          <Route path="/About" exact component={About} />
         </div>
       </Router>
     );

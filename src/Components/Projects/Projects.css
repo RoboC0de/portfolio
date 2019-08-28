@@ -59,6 +59,18 @@
   margin: 0px 0px 0px 5px;
 }
 
+.title-git {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.github {
+  height: 40px;
+  border-radius: 100%;
+  margin-left: 20px;
+}
+
 .details h1 {
   font-size: 55px;
   font-family: PopReg;
@@ -157,6 +169,12 @@
   }
   .details h2 {
     font-size: 28px;
+  }
+  .title-git {
+    justify-self: center;
+
+    justify-content: center;
+    justify-items: center;
   }
 }
 
