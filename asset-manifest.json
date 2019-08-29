@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.11d69278.chunk.css",
+    "main.js": "/portfolio/static/js/main.bf452f46.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.bf452f46.chunk.js.map",
+    "runtime~main.js": "/portfolio/static/js/runtime~main.efe3dbaf.js",
+    "runtime~main.js.map": "/portfolio/static/js/runtime~main.efe3dbaf.js.map",
+    "static/js/2.bcc93d2a.chunk.js": "/portfolio/static/js/2.bcc93d2a.chunk.js",
+    "static/js/2.bcc93d2a.chunk.js.map": "/portfolio/static/js/2.bcc93d2a.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.c87db263cf92a93b442c6b7f4a252890.js": "/portfolio/precache-manifest.c87db263cf92a93b442c6b7f4a252890.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.11d69278.chunk.css.map": "/portfolio/static/css/main.11d69278.chunk.css.map",
+    "static/media/Destination1.png": "/portfolio/static/media/Destination1.d47fdf31.png",
+    "static/media/Destination2.png": "/portfolio/static/media/Destination2.8a03970d.png",
+    "static/media/LandingPageImg1.jpg": "/portfolio/static/media/LandingPageImg1.83b99877.jpg",
+    "static/media/Playlistify1.png": "/portfolio/static/media/Playlistify1.7b1dd221.png",
+    "static/media/Playlistify2.png": "/portfolio/static/media/Playlistify2.e1fa53d9.png",
+    "static/media/App.css": "/portfolio/static/media/Roboto-Regular.11eabca2.ttf",
+    "static/media/Ta-aam1.png": "/portfolio/static/media/Ta-aam1.9677fdf5.png",
+    "static/media/Ta-aam2.png": "/portfolio/static/media/Ta-aam2.2836e1ac.png",
+    "static/media/github.png": "/portfolio/static/media/github.0cdbfd08.png",
+    "static/media/side2-new.png": "/portfolio/static/media/side2-new.c37c1748.png"
+  }
+}
