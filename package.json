@@ -9,7 +9,7 @@
     "react-scripts": "3.1.1",
     "simplebar": "^4.1.0"
   },
-  "homepage": "https://RoboC0de.github.io/portfolio/",
+  "homepage": "https://RoboC0de.github.io/portfolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
